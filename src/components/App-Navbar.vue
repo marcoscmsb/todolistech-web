@@ -6,7 +6,7 @@
     <v-app-bar-title>Todolistech</v-app-bar-title>
 
     <template v-slot:append>
-       <router-link to="/" class="text-decoration-none text-white">
+       <router-link to="/home" class="text-decoration-none text-white">
       <v-btn>Home</v-btn>
       </router-link>
       <router-link to="/login" class="text-decoration-none text-white">

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <app-navbar></app-navbar>
+    <app-navbar v-if="!this.$route.meta.esconderNavbar"></app-navbar>
     <v-main>
       <router-view></router-view>
     </v-main>
