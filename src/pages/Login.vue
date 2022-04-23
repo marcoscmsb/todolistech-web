@@ -40,9 +40,10 @@ export default {
     };
   },
   methods: {
-    async fazerLoginn() {
+    async fazerLogin() {
       try {
         const resultado = await AuthService.login(this.usuario);
+        this.$router.push("/home")
       } catch (error) {
         alert(error.message);
       }

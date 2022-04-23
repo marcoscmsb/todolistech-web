@@ -3,6 +3,6 @@ import Home from "./../pages/Home.vue"
 
 
 export default [
-    { path: "/login", component: Login, meta: {esconderNavbar: true} },
-    { path: "/home", component: Home }
+    { path: "/login", name:"Login", component: Login, meta: {esconderNavbar: true} },
+    { path: "/home", name:"Home", component: Home }
 ]

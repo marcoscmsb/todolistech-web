@@ -6,12 +6,19 @@
     <v-app-bar-title>Todolistech</v-app-bar-title>
 
     <template v-slot:append>
-       <router-link to="/home" class="text-decoration-none text-white">
-      <v-btn>Home</v-btn>
-      </router-link>
-      <router-link to="/login" class="text-decoration-none text-white">
-      <v-btn>Login</v-btn>
-      </router-link>
+      <v-btn @click="sair()">Sair</v-btn>
     </template>
   </v-app-bar>
 </template>
+
+<script>
+import AuthService from './../service/AuthService'
+export default {
+  methods: {
+    sair() {
+      AuthService.removerToken()
+      this.$router.push("/login")
+    }
+  }
+}
+</script>
